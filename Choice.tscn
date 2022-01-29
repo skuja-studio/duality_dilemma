@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Choice.gd" type="Script" id=2]
+[ext_resource path="res://Icons/delapouite/banana-peeled.png" type="Texture" id=4]
+[ext_resource path="res://Icons/john-colburn/pistol-gun.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.666667, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.176471, 0, 0, 1 )
+
+[node name="Choice" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ChoiceASprite" type="Sprite" parent="."]
+position = Vector2( 128, 0 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 4 )
+
+[node name="ChoiceBSprite" type="Sprite" parent="."]
+position = Vector2( 514, 0 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 5 )
+
+[node name="CountDownBar" type="ProgressBar" parent="."]
+margin_left = 208.0
+margin_top = -6.0
+margin_right = 438.0
+margin_bottom = 6.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
