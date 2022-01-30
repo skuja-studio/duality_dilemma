@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Fonts/Roboto/Roboto-Light.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Choice.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Fonts/Roboto/Roboto-Italic.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Fonts/Roboto/Roboto-Bold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Fonts/Roboto/Roboto-BoldItalic.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://FullChoiceTemplate.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 74
@@ -38,11 +37,9 @@ font_data = ExtResource( 1 )
 [node name="FullChoiceTemplate" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogueTextFilePath = "res://Dialogue/003_getting_hot.txt"
 
 [node name="Title" type="Label" parent="FullChoiceTemplate"]
 margin_left = 32.0
@@ -66,12 +63,20 @@ custom_fonts/italics_font = SubResource( 4 )
 custom_fonts/bold_font = SubResource( 5 )
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
-bbcode_text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
-[i]Rudy said while getting lazily up from the couch.[/i]
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
-text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
-Rudy said while getting lazily up from the couch.
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
+bbcode_text = "- \"Let's order PIZZA!!\"
+[i]Rudy reaches for the phone[/i]
+- \"Ah, it's turned off, let me turn it back on\"
+[i]It is not turning back on[/i]
+- \"What's happening.. [b]OUCH IT'S HOT[/b]\"
+[i]Rudy want's to drop the phone, but it it's stuck to the hand[/i]
+- \"AAAAAAAA!! Common, damn it!\""
+text = "- \"Let's order PIZZA!!\"
+Rudy reaches for the phone
+- \"Ah, it's turned off, let me turn it back on\"
+It is not turning back on
+- \"What's happening.. OUCH IT'S HOT\"
+Rudy want's to drop the phone, but it it's stuck to the hand
+- \"AAAAAAAA!! Common, damn it!\""
 __meta__ = {
 "_edit_use_anchors_": false
 }

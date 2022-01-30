@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Fonts/Roboto/Roboto-Light.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Choice.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Fonts/Roboto/Roboto-Italic.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Fonts/Roboto/Roboto-Bold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Fonts/Roboto/Roboto-BoldItalic.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://FullChoiceTemplate.gd" type="Script" id=8]
 [ext_resource path="res://GettingHot.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
@@ -39,11 +38,9 @@ font_data = ExtResource( 1 )
 [node name="FullChoiceTemplate" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogueTextFilePath = "res://Dialogue/002_snacks.txt"
 
 [node name="Title" type="Label" parent="FullChoiceTemplate"]
 margin_left = 32.0
@@ -60,19 +57,27 @@ __meta__ = {
 margin_left = 67.0
 margin_top = 182.0
 margin_right = 635.0
-margin_bottom = 919.0
+margin_bottom = 1035.0
 custom_fonts/mono_font = SubResource( 2 )
 custom_fonts/bold_italics_font = SubResource( 6 )
 custom_fonts/italics_font = SubResource( 4 )
 custom_fonts/bold_font = SubResource( 5 )
 custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
-bbcode_text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
-[i]Rudy said while getting lazily up from the couch.[/i]
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
-text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
-Rudy said while getting lazily up from the couch.
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
+bbcode_text = "- \"I don't want to deal with this today...\"
+[i]After hanging up the phone, Rudy turns it off[/i]
+- \"Ahh.. that's better, a relaxing day of Muppets! Dan will think of somethig anyway..\"
+[i]After binging the whole season of The Muppets, there's a weird sound[/i]
+[b]GURGGGGGLRRR[/b]
+- \"Oh it's night already?! And I haven't eaten yet, better get some snacks\"
+- \"Now, to make something... or PIZZA NIGHT?\""
+text = "- \"I don't want to deal with this today...\"
+After hanging up the phone, Rudy turns it off
+- \"Ahh.. that's better, a relaxing day of Muppets! Dan will think of somethig anyway..\"
+After binging the whole season of The Muppets, there's a weird sound
+GURGGGGGLRRR
+- \"Oh it's night already?! And I haven't eaten yet, better get some snacks\"
+- \"Now, to make something... or PIZZA NIGHT?\""
 __meta__ = {
 "_edit_use_anchors_": false
 }

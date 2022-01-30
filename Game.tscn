@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Fonts/Roboto/Roboto-Light.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Choice.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://Fonts/Roboto/Roboto-Italic.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Fonts/Roboto/Roboto-Bold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Fonts/Roboto/Roboto-BoldItalic.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://FullChoiceTemplate.gd" type="Script" id=8]
 [ext_resource path="res://Icons/delapouite/walk.png" type="Texture" id=10]
 [ext_resource path="res://Icons/delapouite/tv.png" type="Texture" id=11]
 
@@ -39,11 +38,9 @@ font_data = ExtResource( 1 )
 [node name="FullChoiceTemplate" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogueTextFilePath = "res://Dialogue/Start.txt"
 
 [node name="Title" type="Label" parent="FullChoiceTemplate"]
 margin_left = 32.0
@@ -69,10 +66,12 @@ custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 bbcode_text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
 [i]Rudy said while getting lazily up from the couch.[/i]
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
+- \"But I'm feeling lazy today, and The Muppets are on! Maybe I just cancel and stay inside for the day?\"
+[b]YAAAAAAAWN[/b]"
 text = "- \"Oh, it's Tuesday, aready?! I should get ready to meet Dan!\" 
 Rudy said while getting lazily up from the couch.
-- \"But I'm feeling lazy today, maybe I just cancel and stay inside for the day?\""
+- \"But I'm feeling lazy today, and The Muppets are on! Maybe I just cancel and stay inside for the day?\"
+YAAAAAAAWN"
 __meta__ = {
 "_edit_use_anchors_": false
 }
