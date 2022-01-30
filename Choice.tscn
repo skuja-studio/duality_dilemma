@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Choice.gd" type="Script" id=2]
-[ext_resource path="res://Icons/delapouite/banana-peeled.png" type="Texture" id=4]
 [ext_resource path="res://Icons/john-colburn/pistol-gun.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -12,16 +11,6 @@ bg_color = Color( 0.176471, 0, 0, 1 )
 
 [node name="Choice" type="Node2D"]
 script = ExtResource( 2 )
-
-[node name="ChoiceASprite" type="Sprite" parent="."]
-position = Vector2( 128, 0 )
-scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 4 )
-
-[node name="ChoiceBSprite" type="Sprite" parent="."]
-position = Vector2( 514, 0 )
-scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 5 )
 
 [node name="CountDownBar" type="ProgressBar" parent="."]
 margin_left = 208.0
@@ -34,3 +23,34 @@ percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ChoiceASprite" type="Sprite" parent="."]
+position = Vector2( 142, 0 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 5 )
+
+[node name="ChoiceBSprite" type="Sprite" parent="."]
+position = Vector2( 504, 0 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 5 )
+
+[node name="BtnA" type="TextureButton" parent="."]
+margin_left = 81.0
+margin_top = -46.0
+margin_right = 203.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnB" type="TextureButton" parent="."]
+margin_left = 440.0
+margin_top = -45.0
+margin_right = 568.0
+margin_bottom = 48.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="BtnA" to="." method="_on_BtnA_pressed"]
+[connection signal="pressed" from="BtnB" to="." method="_on_BtnB_pressed"]

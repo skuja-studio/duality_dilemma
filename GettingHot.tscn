@@ -1,14 +1,13 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Fonts/Roboto/Roboto-Light.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Choice.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Ringing.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Icons/carl-olsen/flame.png" type="Texture" id=3]
+[ext_resource path="res://Scoreboard.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Fonts/Roboto/Roboto-Italic.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Fonts/Roboto/Roboto-Bold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Fonts/Roboto/Roboto-BoldItalic.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://FullChoiceTemplate.gd" type="Script" id=8]
-[ext_resource path="res://Icons/delapouite/walk.png" type="Texture" id=10]
-[ext_resource path="res://Icons/delapouite/tv.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 74
@@ -43,7 +42,7 @@ script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-dialogueTextFilePath = "res://Dialogue/Start.txt"
+dialogueTextFilePath = "res://Dialogue/003_getting_hot.txt"
 
 [node name="Title" type="Label" parent="FullChoiceTemplate"]
 margin_left = 32.0
@@ -51,7 +50,7 @@ margin_top = 32.0
 margin_right = 486.0
 margin_bottom = 150.0
 custom_fonts/font = SubResource( 1 )
-text = "A Rudy Awakening"
+text = "The Sweating"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -79,8 +78,8 @@ __meta__ = {
 
 [node name="Choice" parent="FullChoiceTemplate" instance=ExtResource( 2 )]
 position = Vector2( 16, 1136 )
-choiceATexture = ExtResource( 10 )
-choiceBTexture = ExtResource( 11 )
-sceneForChoiceA = ExtResource( 3 )
-sceneForChoiceB = ExtResource( 3 )
-sceneForSilence = ExtResource( 3 )
+choiceATexture = ExtResource( 3 )
+choiceBTexture = ExtResource( 3 )
+sceneForChoiceA = ExtResource( 4 )
+sceneForChoiceB = ExtResource( 4 )
+sceneForSilence = ExtResource( 4 )

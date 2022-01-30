@@ -1,6 +1,5 @@
 extends Control
 
-
 export(String, FILE, "*.txt") var dialogueTextFilePath: String = ""
 
 func _ready():
@@ -13,7 +12,6 @@ func load_file(filePath: String) -> String:
 	var result: String = ""
 	while not file.eof_reached(): # iterate through all lines until the end of file is reached
 		var line = file.get_line()
-		result += line
-		print(line)
+		result += line + "\n"
 	file.close()
 	return result

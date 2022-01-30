@@ -1,4 +1,0 @@
-Dialogue text.
-Lorem ipsum dolor sit amet, consectetur [b]bold [i]bold italic[/i][/b] [i]italic[/i].
-Aenean in leo nec enim placerat maximus in sit amet ex.
-In condimentum pharetra purus quis vulputate. 

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Restart.gd" type="Script" id=1]
+[ext_resource path="res://Icons/delapouite/clockwise-rotation.png" type="Texture" id=2]
+
+[node name="Restart" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnRestart" type="TextureButton" parent="."]
+margin_left = 674.0
+margin_top = 4.0
+margin_right = 715.0
+margin_bottom = 45.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="BtnRestart"]
+position = Vector2( 22, 21 )
+scale = Vector2( -0.10348, 0.1 )
+texture = ExtResource( 2 )
+
+[connection signal="pressed" from="BtnRestart" to="." method="_on_BtnRestart_pressed"]
